@@ -1,0 +1,110 @@
+PATH
+  remote: .
+  specs:
+    servo (0.1.0)
+      activemodel
+      interactor
+      memery
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (7.0.3.1)
+      activesupport (= 7.0.3.1)
+    activesupport (7.0.3.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    ast (2.4.2)
+    concurrent-ruby (1.1.10)
+    diff-lcs (1.5.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    faker (2.22.0)
+      i18n (>= 1.8.11, < 2)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    interactor (3.1.2)
+    memery (1.4.1)
+      ruby2_keywords (~> 0.0.2)
+    minitest (5.16.2)
+    parallel (1.22.1)
+    parser (3.1.2.0)
+      ast (~> 2.4.1)
+    rack (2.2.4)
+    rainbow (3.1.1)
+    rake (13.0.6)
+    regexp_parser (2.5.0)
+    rexml (3.2.5)
+    rspec (3.11.0)
+      rspec-core (~> 3.11.0)
+      rspec-expectations (~> 3.11.0)
+      rspec-mocks (~> 3.11.0)
+    rspec-core (3.11.0)
+      rspec-support (~> 3.11.0)
+    rspec-expectations (3.11.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-mocks (3.11.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-support (3.11.0)
+    rubocop (0.93.1)
+      parallel (~> 1.10)
+      parser (>= 2.7.1.5)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8)
+      rexml
+      rubocop-ast (>= 0.6.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 2.0)
+    rubocop-ast (1.19.1)
+      parser (>= 3.1.1.0)
+    rubocop-faker (1.1.0)
+      faker (>= 2.12.0)
+      rubocop (>= 0.82.0)
+    rubocop-ordered_methods (0.6)
+      rubocop (>= 0.60)
+    rubocop-performance (1.10.2)
+      rubocop (>= 0.90.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
+    rubocop-rails (2.9.1)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 0.90.0, < 2.0)
+    rubocop-rake (0.5.1)
+      rubocop
+    rubocop-rspec (1.44.1)
+      rubocop (~> 0.87)
+      rubocop-ast (>= 0.7.1)
+    rubocop-thread_safety (0.4.4)
+      rubocop (>= 0.53.0)
+    ruby-progressbar (1.11.0)
+    ruby2_keywords (0.0.5)
+    test-prof (1.0.9)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+    unicode-display_width (1.8.0)
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  factory_bot
+  faker
+  rake (~> 13.0)
+  rspec
+  rubocop (~> 0.80)
+  rubocop-faker
+  rubocop-ordered_methods
+  rubocop-performance
+  rubocop-rails
+  rubocop-rake
+  rubocop-rspec
+  rubocop-thread_safety
+  servo!
+  test-prof
+
+BUNDLED WITH
+   2.2.3
