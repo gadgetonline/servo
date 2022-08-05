@@ -2,7 +2,7 @@
 
 require_relative 'lib/servo/version'
 
-Gem::Specification.new do |spec| # rubocop:disable Metrics/BlockLength
+Gem::Specification.new do |spec|
   spec.add_dependency 'activemodel'
   spec.add_dependency 'activesupport'
   spec.add_dependency 'interactor'
@@ -44,4 +44,5 @@ Gem::Specification.new do |spec| # rubocop:disable Metrics/BlockLength
   spec.require_paths               = ['lib']
   spec.summary                     = 'A service object with validations, memoization, and more.'
   spec.version                     = Servo::VERSION
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end

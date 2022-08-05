@@ -9,8 +9,7 @@ require 'factory_bot'
 require 'faker'
 require 'servo'
 
-File.expand_path('..', __FILE__).tap do |root_dir|
+File.expand_path(__dir__).tap do |root_dir|
   Dir[File.join(root_dir, 'config/initializers/**/*.rb')].sort.each { |f| require f }
   Dir[File.join(root_dir, 'support', '**', '*.rb')].sort.each { |f| require f }
 end
-
