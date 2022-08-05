@@ -4,9 +4,12 @@ require_relative 'lib/servo/version'
 
 Gem::Specification.new do |spec| # rubocop:disable Metrics/BlockLength
   spec.add_dependency 'activemodel'
+  spec.add_dependency 'activesupport'
   spec.add_dependency 'interactor'
   spec.add_dependency 'memery'
+  spec.add_dependency 'zeitwerk'
 
+  spec.add_development_dependency 'debug', '>= 1.0.0'
   spec.add_development_dependency 'factory_bot'
   spec.add_development_dependency 'faker'
   spec.add_development_dependency 'rspec'

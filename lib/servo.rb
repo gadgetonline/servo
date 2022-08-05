@@ -1,8 +1,15 @@
 # frozen_string_literal: true
 
-require_relative 'servo/version'
+require 'active_model'
+require 'active_support'
+require 'interactor'
+require 'memery'
+require 'zeitwerk'
+
+loader = Zeitwerk::Loader.for_gem
+loader.setup
 
 module Servo
-  class Error < StandardError; end
-  # Your code goes here...
 end
+
+loader.eager_load
