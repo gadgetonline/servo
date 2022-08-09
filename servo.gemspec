@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'debug', '>= 1.0.0'
   spec.add_development_dependency 'factory_bot'
   spec.add_development_dependency 'faker'
+  spec.add_development_dependency 'rails'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'rubocop-faker'
@@ -21,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop-rake'
   spec.add_development_dependency 'rubocop-rspec'
   spec.add_development_dependency 'rubocop-thread_safety'
+  spec.add_development_dependency 'sidekiq'
   spec.add_development_dependency 'test-prof'
 
   spec.authors     = ['Martin Streicher, Gadget Consulting']

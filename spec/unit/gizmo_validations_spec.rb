@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 RSpec.describe Gizmo do
   context 'when called with valid parameters' do
     it 'executes the task' do
