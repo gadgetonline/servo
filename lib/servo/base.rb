@@ -2,10 +2,12 @@
 
 module Servo
   class Base
-    include ActiveModel::Callbacks
+    extend ActiveModel::Callbacks
     include ActiveModel::Validations
     include Interactor
     include Memery
+
+    define_model_callbacks :validation
 
     delegate_missing_to :context
 
@@ -23,5 +25,11 @@ module Servo
     end
 
     def execute; end
+
+    def valid?
+      run_callbacks :validation do
+        super
+      end
+    end
   end
 end
