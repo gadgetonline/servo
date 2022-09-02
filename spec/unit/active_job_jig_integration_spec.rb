@@ -14,7 +14,6 @@ RSpec.describe 'whatever' do
   end
 
   it 'executes a job' do
-    debugger
     expect(ActiveJobJig.perform_now).to be_truthy
   end
 end

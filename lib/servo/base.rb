@@ -2,6 +2,7 @@
 
 module Servo
   class Base
+    include ActiveModel::Callbacks
     include ActiveModel::Validations
     include Interactor
     include Memery

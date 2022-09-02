@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Servo
-  class Job < Base
+  class Job
     def self.active_job_modules
       [
         ActiveJob::Arguments,
