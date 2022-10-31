@@ -7,6 +7,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activesupport'
   spec.add_dependency 'interactor'
   spec.add_dependency 'memery'
+  spec.add_dependency 'wannabe_bool'
   spec.add_dependency 'zeitwerk'
 
   spec.add_development_dependency 'debug', '>= 1.0.0'
@@ -22,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop-rake'
   spec.add_development_dependency 'rubocop-rspec'
   spec.add_development_dependency 'rubocop-thread_safety'
-  spec.add_development_dependency 'sidekiq'
+  spec.add_development_dependency 'sidekiq', '< 7'
   spec.add_development_dependency 'test-prof'
 
   spec.authors     = ['Martin Streicher, Gadget Consulting']
