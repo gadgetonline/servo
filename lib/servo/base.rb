@@ -9,8 +9,6 @@ module Servo
 
     define_model_callbacks :validation
 
-    delegate_missing_to :context
-
     def call
       if valid?
         result           = execute
@@ -25,6 +23,17 @@ module Servo
     end
 
     def execute; end
+
+    def method_missing(method, *args, &block)
+      context.public_send(method, *args, &block)
+    end
+
+    #
+    # The `context` responds to any method. If the context
+    # lacks the key, it returns nil.
+    def respond_to_missing?(_method_name, _include_private = false)
+      true
+    end
 
     def valid?
       run_callbacks :validation do
