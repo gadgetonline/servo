@@ -6,6 +6,9 @@ require 'interactor'
 require 'memery'
 require 'wannabe_bool'
 require 'zeitwerk'
+require 'servo/base'
+require 'servo/job'
+require 'servo/version'
 
 loader = Zeitwerk::Loader.for_gem
 loader.log! if ENV.fetch('SERVO_DEBUG_LOADER', false).to_boolean
