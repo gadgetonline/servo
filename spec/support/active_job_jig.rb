@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-class ActiveJobJig < Servo::Job
-  def perform(...)
-    self.class.call(...)
+class ActiveJobJig < Servo::ActiveJob
+  def perform(**args)
+    call(**args)
   end
 
   def execute

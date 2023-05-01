@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class SidekiqJobJig < Servo::Job
+class SidekiqJobJig < Servo::SidekiqJob
   include Sidekiq::Worker
 
   def execute

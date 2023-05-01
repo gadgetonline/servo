@@ -1,4 +1,5 @@
 # frozen_string_literal: true
 
-class Sprocket < Servo::Job
+class Sprocket
+  include Servo::Callable
 end

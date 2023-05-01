@@ -6,7 +6,7 @@
 #   end
 # end
 
-class TestJob < ApplicationJob
+class TestJob < Servo::ActiveJob
   include Interactor
 
   def call
