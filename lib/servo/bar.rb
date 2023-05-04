@@ -5,7 +5,7 @@ require 'sidekiq'
 module Servo
   class Bar < SidekiqJob
     include Callable
-debugger
+
     if defined?(Sidekiq)
       include Sidekiq::Worker
     end

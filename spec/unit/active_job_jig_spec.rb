@@ -9,7 +9,6 @@ RSpec.describe 'whatever' do
     r = Servo::Foo.perform_now(x: 1, y: 2)
     s = Servo::Foo.call(z: 2, w: 3)
     t = Servo::Bar.perform_async(a: 1, b: 2)
-    debugger
     expect(ActiveJobJig.ancestors).to include(ActiveJob::Execution)
   end
 

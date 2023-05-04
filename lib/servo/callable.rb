@@ -13,7 +13,6 @@ module Servo
       define_model_callbacks :validation
 
       def call
-        debugger
         if valid?
           result           = execute
           context.result ||= result
