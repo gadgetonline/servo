@@ -13,6 +13,6 @@ jobs:
         ruby-version: 2.6.5
     - name: Run the default task
       run: |
-        gem install bundler -v 2.3.21
+        gem install bundler -v 2.4.12
         bundle install
         bundle exec rspec
