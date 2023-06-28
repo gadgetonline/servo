@@ -223,7 +223,7 @@ GEM
       connection_pool (>= 2.2.5, < 3)
       rack (~> 2.0)
       redis (>= 4.5.0, < 5)
-    test-prof (1.2.1)
+    test-prof (1.2.2)
     thor (1.2.1)
     timeout (0.3.2)
     tzinfo (2.0.6)
