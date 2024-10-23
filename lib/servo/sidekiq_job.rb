@@ -3,9 +3,6 @@
 module Servo
   class SidekiqJob
     include Callable
-
-    if defined?(Sidekiq)
-      include Sidekiq::Worker
-    end
+    include Sidekiq::Worker if defined?(Sidekiq)
   end
 end

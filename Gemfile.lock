@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    servo (0.1.2)
+    servo (0.1.3)
       activemodel
       activesupport
       interactor
